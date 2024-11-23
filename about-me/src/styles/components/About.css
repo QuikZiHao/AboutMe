@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'BoldsineDemo'; /* Name of the font */
+    src: url('../../assets/fontstyle/Boldsine Demo.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .aboutmetag {
+    background-image: url('../../assets/aboutme_tag.jpg');
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10rem;
+    background-size: cover;
+    font-weight: bold;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Smooth transition */
+    font-family: 'BoldsineDemo', sans-serif;
+    opacity: 1; /* Initially visible */
+    transform: scale(1); /* Default size */
+  }
+  
+  .aboutmetag.hidden {
+    opacity: 0; /* Fade out */
+    transform: scale(0.9); /* Slight shrink effect */
+    visibility: hidden; /* Ensure it's hidden when faded out */
+  }
+  
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%; /* Full width of the viewport */
+    height: 80%; /* Full height of the viewport */
+    margin: 5rem;
+    padding: 5rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5); /* 50% transparent white */
+    border-radius: 4rem; 
+    box-shadow: none; /* Optional: Remove shadow for a cleaner look */
+    backdrop-filter: blur(10px); /* Blur effect on the background */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+  }
+  
+  .about:hover {
+    transform: none; /* Optional: Remove hover transform for full screen */
+    box-shadow: none; /* Optional: Remove hover shadow */
+  }
+  
+  .about-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligns all child elements to the top */
+    gap: 2rem;
+    opacity: 0;
+    transform: translateY(20px); /* Start slightly below */
+    visibility: hidden;
+    transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Smooth fade-in and upward motion */
+  }
+  
+  .about-details.show {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Reset position */
+    visibility: visible; /* Ensure it's visible */
+  }
+
+  
+  .profile-pic {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin-top: 0; /* Removes unnecessary spacing */
+    object-fit: cover; /* Ensures the image fits well within the circle */
+  }
+  
+  .about-content {
+    flex: 1;  /* Take up remaining space on the right */
+    text-align: left;  /* Align text to the left */
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 10px 0;
+  }
+  

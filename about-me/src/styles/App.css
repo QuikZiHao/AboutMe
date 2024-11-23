@@ -1,0 +1,47 @@
+/* Ensure the html and body occupy the full height of the viewport */
+html, body {
+  height: 100%; /* Full height for both html and body */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+}
+
+/* Set the body background without disrupting layout */
+body {
+  background-image: url(../assets/background.jpg);
+  background-size: cover; /* Make sure the image covers the entire viewport */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-position: center; /* Center the image */
+  color: white;
+}
+
+/* Create a container to center content while preserving the header */
+.container {
+  display: flex;
+  flex-direction: column; /* Allow content to stack vertically */
+  min-height: 100vh; /* Ensure container fills the viewport */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Add some spacing to the header */
+header {
+  width: 100%;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the header */
+  position: fixed; /* Fix the header at the top */
+  top: 0;
+  left: 0;
+  z-index: 10; /* Ensure the header stays above the content */
+  text-align: center;
+}
+
+/* Main content styles */
+main {
+  flex: 1; /* Take up the remaining space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}

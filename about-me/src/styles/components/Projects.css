@@ -1,0 +1,40 @@
+.projects {
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .projects h2 {
+    font-size: 2rem;
+    text-align: center;
+    color: #222;
+  }
+  
+  .project-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .project {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: left;
+  }
+  
+  .project h3 {
+    color: #333;
+  }
+  
+  .project a {
+    color: #0073e6;
+    text-decoration: none;
+  }
+  
+  .project a:hover {
+    text-decoration: underline;
+  }
+  
